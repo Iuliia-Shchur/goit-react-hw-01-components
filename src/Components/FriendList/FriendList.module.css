@@ -1,0 +1,37 @@
+.friendList {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 40px;
+}
+
+.item {
+  padding: 10px 0 10px 10px;
+  display: inline-flex;
+  align-items: center;
+  width: 400px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px #00000033;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 10%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.178);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.status {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
