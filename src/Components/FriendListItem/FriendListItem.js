@@ -17,9 +17,13 @@ function FriendListItem({ avatar = defaultImg, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string,
+      name: PropTypes.string,
+      isOnline: PropTypes.bool,
+    })
+  ),
 };
 
 export default FriendListItem;
